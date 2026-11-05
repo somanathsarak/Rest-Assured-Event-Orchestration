@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["message", "data"],
+  "properties": {
+    "message": { "type": "string" },
+    "data": {
+      "type": "object",
+      "required": [
+        "User_ID", "Language_ID", "Language_Code", "User_Name",
+        "First_Name", "Last_Name", "User_Status", "Cognito_User_ID",
+        "Create_Date", "Updated_Date", "Email_Address",
+        "Failed_Attempt_Count", "Consecutive_Locked_Attempts",
+        "Is_Account_Permanently_Locked", "User_Secret",
+        "Is_Upload_Disabled", "EntityRole", "configs"
+      ],
+      "properties": {
+        "User_ID": { "type": "string" },
+        "Language_ID": { "type": "string" },
+        "Language_Code": { "type": "string" },
+        "CITSS_User_ID": { "type": ["string", "null"] },
+        "User_Name": { "type": "string" },
+        "First_Name": { "type": "string" },
+        "Last_Name": { "type": "string" },
+        "User_Status": { "type": "string" },
+        "Effective_Date": { "type": ["string", "null"] },
+        "Cognito_User_ID": { "type": "string" },
+        "CITSS_Last_Updated_Date": { "type": ["string", "null"] },
+        "Create_Date": { "type": "string", "format": "date-time" },
+        "Updated_Date": { "type": "string", "format": "date-time" },
+        "Email_Address": { "type": "string", "format": "email" },
+        "Phone_Number": { "type": ["string", "null"] },
+        "Street1": { "type": ["string", "null"] },
+        "Street2": { "type": ["string", "null"] },
+        "City": { "type": ["string", "null"] },
+        "State": { "type": ["string", "null"] },
+        "Country": { "type": ["string", "null"] },
+        "Postal_Code": { "type": ["string", "null"] },
+        "Last_Locked_TimeStamp": { "type": ["string", "null"], "format": "date-time" },
+        "Failed_Attempt_Count": { "type": "integer" },
+        "Consecutive_Locked_Attempts": { "type": "integer" },
+        "Is_Account_Permanently_Locked": { "type": "integer" },
+        "User_Secret": { "type": "string" },
+        "Is_Upload_Disabled": { "type": "integer" },
+        "EntityRole": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "EntityGroupAssnId", "Role_Code_Point_Permission_ID",
+              "Role_ID", "Role_Name", "entityid", "Entity_Legal_Name", "Entity_Operating_Name"
+            ],
+            "properties": {
+              "EntityGroupAssnId": { "type": "string" },
+              "Role_Code_Point_Permission_ID": { "type": "string" },
+              "Role_ID": { "type": "string" },
+              "Role_Name": { "type": "string" },
+              "entityid": { "type": "string" },
+              "Entity_Legal_Name": { "type": "string" },
+              "Entity_Operating_Name": { "type": "string" }
+            }
+          }
+        },
+        "configs": {
+          "type": "object",
+          "required": [
+            "rememberMe", "rememberMeDuration",
+            "sessionTimeOut", "noticeSessionTimeOut", "isEditEventAllowed"
+          ],
+          "properties": {
+            "rememberMe": { "type": "boolean" },
+            "rememberMeDuration": { "type": "integer" },
+            "sessionTimeOut": { "type": "integer" },
+            "noticeSessionTimeOut": { "type": "integer" },
+            "isEditEventAllowed": {
+              "type": "object",
+              "patternProperties": {
+                "^[0-9]+$": { "type": "boolean" }
+              },
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  }
+}
