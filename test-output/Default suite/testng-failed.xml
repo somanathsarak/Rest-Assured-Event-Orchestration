@@ -5,7 +5,7 @@
     <classes>
       <class name="prescribedEventTest.WAsingleAuction">
         <methods>
-          <include name="A218"/>
+          <include name="A278"/>
           <include name="setup"/>
         </methods>
       </class> <!-- prescribedEventTest.WAsingleAuction -->

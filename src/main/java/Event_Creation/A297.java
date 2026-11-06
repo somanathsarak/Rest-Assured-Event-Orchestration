@@ -83,7 +83,7 @@ public class A297 {
 	public static String eventClosure;
 	public static String financialSettlement;
 	public static String eventId;
-	public static String randomEventName;      //= "R3.4_A297PrescribeEvent-14-10_1";
+	public static String randomEventName   ; //="R4.0_A297_CA_QC_JOINT_AUCTION_Z88N";
 	public static String jointAuctionEventId;
 
 	public static void createJointAuctionEvent() {

@@ -1285,6 +1285,13 @@ public class calJointAuction extends BaseClass {
 		API_Common_Endpoints.getVintages();
 	
 		A297.addBid(System.getProperty("QC3796_4241_Entity_ID"), ConfigFileManager.getProperty("Bid_Price4_Current_PE11"), ConfigFileManager.getProperty("Bid_Lot4_Current_PE11"), System.getProperty("currentvintageType"), API_Common_Endpoints.arEventId);
+		
+		user_LogIn.logInUser(UsersAndMFASecreteKey.AR_UserName4_PE11,UsersAndMFASecreteKey.password, UsersAndMFASecreteKey.AR_UserName4_PE11_MFAKey);//CA
+		API_Common_Endpoints.getUserByToken();
+		API_Common_Endpoints.jurisdictionListFilter();
+		API_Common_Endpoints.getAllEntities("Entity_PE11_API");
+		API_Common_Endpoints.getLiveEvents(A297.randomEventName);
+		API_Common_Endpoints.getVintages();
 		A297.addBid(System.getProperty("QC3797_4243_Entity_ID"), ConfigFileManager.getProperty("Bid_Price5_Current_PE11"), ConfigFileManager.getProperty("Bid_Lot5_Current_PE11"), System.getProperty("currentvintageType"), API_Common_Endpoints.arEventId);
 		MyListeners.getExtentTest().log(Status.PASS, "Bid successfully added by Account Representative");
 		

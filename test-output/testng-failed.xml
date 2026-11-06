@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="prescribedEventTest.waAPCRevent">
+      <class name="prescribedEventTest.WAsingleAuction">
         <methods>
-          <include name="R325"/>
+          <include name="A278"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- prescribedEventTest.waAPCRevent -->
+      </class> <!-- prescribedEventTest.WAsingleAuction -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

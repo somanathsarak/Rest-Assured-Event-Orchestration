@@ -38,15 +38,18 @@ public class UsersAndMFASecreteKey {
 	public static String AR_UserName3_PE1 = "t3causera@demo.citssdev.com";
 	public static String AR_UserName3_PE1_MFAKey = "YCBJAD3KZB7WYTHYRRLE6DI2MYJNGL4VHLI3CAVFWSGK4OKIIY6A";
 
-	public static String AR_UserName4_PE1 = "t3qcuseraDEMO_QA@demo.citssdev.com";
-	public static String AR_UserName4_PE1_MFAKey = "CYGDVUE7G24LVTHXBQRJGNOST4BE4ECK2DEDWGQYS6SYKXEWWVYQ";
+	public static String AR_UserName4_PE1 = "t3qcuserb@demo.citssdev.com";
+	public static String AR_UserName4_PE1_MFAKey = "7G3OCHMHSCXJTRM2KB3JQ3SIG2OX5LU6VCAQUSGV34M3NGBUV7KA";
+	
+	public static String AR_UserName4_PE11 = "qc_ar7@eqanim-qa.wci-validate.org";
+	public static String AR_UserName4_PE11_MFAKey = "K2ZKISKW3POSX4D4WFJLWGZMOCLBZEWBCYJM667THCV5HMLVA3BA";
 
 	// A298
 	public static String AR_UserName5_PE1 = "t3qcuserb@demo.citssdev.com";
 	public static String AR_UserName5_PE1_MFAKey = "7G3OCHMHSCXJTRM2KB3JQ3SIG2OX5LU6VCAQUSGV34M3NGBUV7KA";
 
-	public static String AR_UserName6_PE1 = "t3qcuserc@demo.citssdev.com";
-	public static String AR_UserName6_PE1_MFAKey = "L2FRG3RYQFQEO66DVV2Z7I7UTQ3JJ7ROFAK3QQSJBUJJBFJADINA";
+	public static String AR_UserName6_PE1 = "qc_ar7@eqanim-qa.wci-validate.org";
+	public static String AR_UserName6_PE1_MFAKey = "K2ZKISKW3POSX4D4WFJLWGZMOCLBZEWBCYJM667THCV5HMLVA3BA";
 
 	// R69
 	public static String AR_UserName7_PE1 = "Sanitized_UserQC_User@demo.citssdev.com";

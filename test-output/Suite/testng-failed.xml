@@ -3,12 +3,30 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="prescribedEventTest.calSingleAuction">
+        <methods>
+          <include name="singleAuctionEvent"/>
+        </methods>
+      </class> <!-- prescribedEventTest.calSingleAuction -->
+      <class name="prescribedEventTest.WAsingleAuction">
+        <methods>
+          <include name="A218"/>
+          <include name="A278"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- prescribedEventTest.WAsingleAuction -->
       <class name="prescribedEventTest.waAPCRevent">
         <methods>
           <include name="R325"/>
           <include name="setup"/>
         </methods>
       </class> <!-- prescribedEventTest.waAPCRevent -->
+      <class name="prescribedEventTest.QcSBMA">
+        <methods>
+          <include name="R76"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- prescribedEventTest.QcSBMA -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

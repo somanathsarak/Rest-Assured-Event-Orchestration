@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="prescribedEventTest.WAsingleAuction"/>
+      <class name="prescribedEventTest.calReserveSale"/>
+      <class name="prescribedEventTest.calSingleAuction"/>
+      <class name="prescribedEventTest.waAPCRevent"/>
+      <class name="prescribedEventTest.QcSBMA"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

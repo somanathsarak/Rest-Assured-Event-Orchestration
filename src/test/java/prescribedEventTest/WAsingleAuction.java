@@ -136,7 +136,7 @@ public class WAsingleAuction extends BaseClass{
 //		MyListeners.getExtentTest().log(Status.PASS, "Approve event by Second Sponsor");
 		API_Common_Endpoints.getAPIList();
 		API_Common_Endpoints.executeGetQualifiedBidderAPI();
-		Thread.sleep(20000);
+		Thread.sleep(70000);
 		API_Common_Endpoints.executeGetBidLimitationsAPI();
 		Thread.sleep(70000);
 
